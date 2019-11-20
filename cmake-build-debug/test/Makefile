@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caffe/CLionProjects/mytinystl/cmake-build-debug/CMakeFiles /home/caffe/CLionProjects/mytinystl/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/caffe/CLionProjects/mytinystl/cmake-build-debug/CMakeFiles /home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/CMakeFiles/progress.marks
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/caffe/CLionProjects/mytinystl/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named mytinystl
+# Convenience name for target.
+test/CMakeFiles/alloc_test.dir/rule:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/alloc_test.dir/rule
+.PHONY : test/CMakeFiles/alloc_test.dir/rule
 
-# Build rule for target.
-mytinystl: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mytinystl
-.PHONY : mytinystl
+# Convenience name for target.
+alloc_test: test/CMakeFiles/alloc_test.dir/rule
 
-# fast build rule for target.
-mytinystl/fast:
-	$(MAKE) -f CMakeFiles/mytinystl.dir/build.make CMakeFiles/mytinystl.dir/build
-.PHONY : mytinystl/fast
-
-#=============================================================================
-# Target rules for targets named alloc_test
-
-# Build rule for target.
-alloc_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 alloc_test
 .PHONY : alloc_test
 
 # fast build rule for target.
 alloc_test/fast:
-	$(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/build
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/build
 .PHONY : alloc_test/fast
 
-main.o: main.cpp.o
+alloc_test.o: alloc_test.cpp.o
 
-.PHONY : main.o
+.PHONY : alloc_test.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/mytinystl.dir/build.make CMakeFiles/mytinystl.dir/main.cpp.o
-.PHONY : main.cpp.o
+alloc_test.cpp.o:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/alloc_test.cpp.o
+.PHONY : alloc_test.cpp.o
 
-main.i: main.cpp.i
+alloc_test.i: alloc_test.cpp.i
 
-.PHONY : main.i
+.PHONY : alloc_test.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/mytinystl.dir/build.make CMakeFiles/mytinystl.dir/main.cpp.i
-.PHONY : main.cpp.i
+alloc_test.cpp.i:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/alloc_test.cpp.i
+.PHONY : alloc_test.cpp.i
 
-main.s: main.cpp.s
+alloc_test.s: alloc_test.cpp.s
 
-.PHONY : main.s
+.PHONY : alloc_test.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/mytinystl.dir/build.make CMakeFiles/mytinystl.dir/main.cpp.s
-.PHONY : main.cpp.s
+alloc_test.cpp.s:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/alloc_test.cpp.s
+.PHONY : alloc_test.cpp.s
 
 # Help Target
 help:
@@ -170,12 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... mytinystl"
-	@echo "... edit_cache"
 	@echo "... alloc_test"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... edit_cache"
+	@echo "... alloc_test.o"
+	@echo "... alloc_test.i"
+	@echo "... alloc_test.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

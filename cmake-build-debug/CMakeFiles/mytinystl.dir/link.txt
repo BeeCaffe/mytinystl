@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/mytinystl.dir/main.cpp.o  -o mytinystl 
+/usr/bin/c++  -g   CMakeFiles/mytinystl.dir/main.cpp.o  -o ../bin/mytinystl 

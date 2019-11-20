@@ -76,14 +76,42 @@
 #### 2.2.3 malloc_alloc（一级配置器）
 ***1)void* allocate(size_type nbytes);***
 
+使用C语言中的moalloc函数配置nbytes个字节的内存，并返回void*。
+
 ***2)void deallocate(void* ptr,size_type n);***
+
+使用C语言中的free函数释放内存区域，返回void。在一级配置器中直接释放掉所有的内存而不管指定的大小n。
 
 ***3)void* reallocate(void* ptr,size_type n);***
 
+使用C语言中的reallocate函数重新配置n个字节内存区域，释放掉原来的内存区域，返回void*。
+
 ***4)void* oom_allocate(size_type nbytes);***
+
+当系统内存不足时，采用提供的oom_hanlder函数来进行处理，试图获得足够的内存。该函数的主要逻辑如下：
+
+1）在死循环中
+
+2）声明变量oom_handler_func，这是一个函数指针，指向用户指定的内存溢出时所采取的处理函数。
+
+3）将私有成员变量oom_handler赋值给oom_handler_func，如果oom_handler为空，即用户未指定处理函数将抛出一个异常
+否则，调用该函数。
+
+4）尝试重新分配内存，成功则返回，不成功则处重复上面的步骤。
 
 ***5)void* oom_reallocate(void* ptr,size_type n);***
 
+类似于上面一个函数，这里不再缀述。
+
+***6)void (*set_oom_handler)(void (*f)()));***
+
 ### 2.3成员变量
+#### default_alloc（二级配置器）
+***mempool_beg***
+***mempool_end***
+***heap_size**
+***union obj{}***
+#### molloc_alloc（一级配置器）
+***void (*oom_handler)()***
 
 ## 3.其他
