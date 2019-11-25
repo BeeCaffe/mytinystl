@@ -111,7 +111,7 @@
 ***mempool_end***
 ***heap_size**
 ***union obj{}***
-#### molloc_alloc（一级配置器）
+#### malloc_alloc（一级配置器）
 ***void (*oom_handler)()***
 
 ## 3.其他
