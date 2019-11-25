@@ -52,4 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mytinystl.dir/DependInfo.cmake"
   "test/CMakeFiles/alloc_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/construct_test.dir/DependInfo.cmake"
   )

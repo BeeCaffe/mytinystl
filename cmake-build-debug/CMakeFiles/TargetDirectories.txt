@@ -2,5 +2,6 @@
 /home/caffe/CLionProjects/mytinystl/cmake-build-debug/CMakeFiles/mytinystl.dir
 /home/caffe/CLionProjects/mytinystl/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
-/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/CMakeFiles/alloc_test.dir
 /home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/CMakeFiles/alloc_test.dir
+/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/CMakeFiles/construct_test.dir

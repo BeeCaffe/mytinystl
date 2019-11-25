@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/construct_test.dir/construct_test.cpp.o  -o ../../bin/construct_test 

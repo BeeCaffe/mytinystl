@@ -125,6 +125,21 @@ alloc_test/fast:
 	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/build
 .PHONY : alloc_test/fast
 
+# Convenience name for target.
+test/CMakeFiles/construct_test.dir/rule:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/construct_test.dir/rule
+.PHONY : test/CMakeFiles/construct_test.dir/rule
+
+# Convenience name for target.
+construct_test: test/CMakeFiles/construct_test.dir/rule
+
+.PHONY : construct_test
+
+# fast build rule for target.
+construct_test/fast:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/build
+.PHONY : construct_test/fast
+
 alloc_test.o: alloc_test.cpp.o
 
 .PHONY : alloc_test.o
@@ -152,6 +167,33 @@ alloc_test.cpp.s:
 	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/alloc_test.cpp.s
 .PHONY : alloc_test.cpp.s
 
+construct_test.o: construct_test.cpp.o
+
+.PHONY : construct_test.o
+
+# target to build an object file
+construct_test.cpp.o:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/construct_test.cpp.o
+.PHONY : construct_test.cpp.o
+
+construct_test.i: construct_test.cpp.i
+
+.PHONY : construct_test.i
+
+# target to preprocess a source file
+construct_test.cpp.i:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/construct_test.cpp.i
+.PHONY : construct_test.cpp.i
+
+construct_test.s: construct_test.cpp.s
+
+.PHONY : construct_test.s
+
+# target to generate assembly for a file
+construct_test.cpp.s:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/construct_test.cpp.s
+.PHONY : construct_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,11 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... alloc_test"
 	@echo "... edit_cache"
+	@echo "... alloc_test"
+	@echo "... construct_test"
 	@echo "... alloc_test.o"
 	@echo "... alloc_test.i"
 	@echo "... alloc_test.s"
+	@echo "... construct_test.o"
+	@echo "... construct_test.i"
+	@echo "... construct_test.s"
 .PHONY : help
 
 

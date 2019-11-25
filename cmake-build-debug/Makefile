@@ -136,6 +136,19 @@ alloc_test/fast:
 	$(MAKE) -f test/CMakeFiles/alloc_test.dir/build.make test/CMakeFiles/alloc_test.dir/build
 .PHONY : alloc_test/fast
 
+#=============================================================================
+# Target rules for targets named construct_test
+
+# Build rule for target.
+construct_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 construct_test
+.PHONY : construct_test
+
+# fast build rule for target.
+construct_test/fast:
+	$(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/build
+.PHONY : construct_test/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -173,6 +186,7 @@ help:
 	@echo "... mytinystl"
 	@echo "... edit_cache"
 	@echo "... alloc_test"
+	@echo "... construct_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
