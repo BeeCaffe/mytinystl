@@ -7,9 +7,21 @@
 #include <vector>
 #include <iostream>
 using namespace std;
+class tst{
+public:
+    tst()= default;
+    tst(int i):i(i){}
+    ~tst(){
+        cout<<"call destructor"<<endl;
+    }
+    int i;
+};
 int main(){
+    tst *obj;
     int a=5;
-    mystl::destory<int>(&a);
+    mystl::construct(obj,a);
+    cout<<obj->i<<endl;
+    mystl::destory(obj);
     cout<<"OK!"<<endl;
     return 0;
 }

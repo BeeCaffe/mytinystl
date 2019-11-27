@@ -9,7 +9,7 @@ namespace mystl{
     template <class T1,class T2>
     inline void construct(T1* p,T2& value)  throw(int) {
         new (p) T1(value);
-        if(p== nullptr) throw (-1);
+        if(p == nullptr) throw (-1);
     }
 
     template <class T>

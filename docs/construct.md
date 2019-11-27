@@ -6,12 +6,12 @@ construct 和 destory等函数完成。construct主要是用来构造对象，�
 用了特性萃取技术来提高析构的效率，在我实现的版本中，为了方便代码实现不考虑特性萃取的机制。
 ## 接口
 ### construct()
-**1)void construct(T1 *p,const T2& value)**
+**1)void construct(T1 \*p,const T2& value)**  
 
     使用placement new操作完成对象的构造。
 
 ### destory()
-**1)void destory(T1 *pointer)**
+**1)void destory(T1 \*pointer)**
 
     调用对象析构函数完成析构。
 

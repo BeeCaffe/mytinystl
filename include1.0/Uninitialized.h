@@ -4,10 +4,13 @@
  **********************************************************************************************************************/
 #ifndef MYTINYSTL_UNINITIALIZED_H
 #define MYTINYSTL_UNINITIALIZED_H
+
+#include <cstdio>
+#include <cstdlib>
 #include "Construct.h"
 namespace mystl{
     template <class ForwardIterator>
-    inline void uninitialized_copy(ForwardIterator first,ForwardIterator last,ForwardIterator result){
+    inline ForwardIterator uninitialized_copy(ForwardIterator first,ForwardIterator last,ForwardIterator result){
         ForwardIterator iter=first;
         try{
             for(; iter!=last;++iter)
@@ -43,6 +46,22 @@ namespace mystl{
             mystl::destory(first,iter);
         }
         return iter;
+    }
+
+    template <class ForwardIterator,class T,class Size>
+    inline ForwardIterator uninitialized_fill_n(ForwardIterator result,Size n,const T& value){
+        ForwardIterator iter=result;
+        int i;
+        try {
+            for (i = 0; i < n; ++i) {
+                mystl::construct(&*(iter++), value);
+            }
+        }catch (int){
+            iter=result;
+            for(int j=0;j<=i;++j){
+                mystl::destory(&*(iter++));
+            }
+        }
     }
 }
 #endif //MYTINYSTL_UNINITIALIZED_H

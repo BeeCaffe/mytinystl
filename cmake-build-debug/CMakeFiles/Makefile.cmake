@@ -51,6 +51,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mytinystl.dir/DependInfo.cmake"
+  "test/CMakeFiles/vector_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/unintialized_test.dir/DependInfo.cmake"
   "test/CMakeFiles/alloc_test.dir/DependInfo.cmake"
   "test/CMakeFiles/construct_test.dir/DependInfo.cmake"
   )

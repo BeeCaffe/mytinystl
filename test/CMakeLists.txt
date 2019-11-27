@@ -1,2 +1,4 @@
 add_executable(alloc_test alloc_test.cpp)
 add_executable(construct_test construct_test.cpp)
+add_executable(unintialized_test unintialized_test.cpp)
+add_executable(vector_test vector_test.cpp)

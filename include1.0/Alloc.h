@@ -226,7 +226,7 @@ namespace mystl{
     }
     /**
      * @name simply_alloc
-     *
+     * 为所用的容器提供空间配置器的接口，通过这个接口调用一级或者二级空间配置器。
      */
     template <class T,class Alloc=default_alloc>
     class simply_alloc{
@@ -240,13 +240,13 @@ namespace mystl{
         static pointer allocate(size_type n){
             return 0==n ? 0:static_cast<pointer >(Alloc::allocate(n* sizeof(T)));
         }
-        void deallocate(pointer ptr){
+        static void deallocate(pointer ptr){
             Alloc::deallocate(ptr, sizeof(T));
         }
-        void deallocate(pointer ptr,size_type n){
+        static void deallocate(pointer ptr,size_type n){
             if(0!=n)    Alloc::deallocate(ptr,n* sizeof(T));
         }
-        pointer reallocate(pointer ptr,size_type nbytes){
+        static pointer reallocate(pointer ptr,size_type nbytes){
             return 0==nbytes? 0:static_cast<pointer >(Alloc::reallocate(ptr,nbytes));
         }
     };

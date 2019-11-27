@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/caffe/CLionProjects/mytinystl/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/92/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/92/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,36 @@ preinstall/fast:
 depend:
 	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+test/CMakeFiles/vector_test.dir/rule:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/vector_test.dir/rule
+.PHONY : test/CMakeFiles/vector_test.dir/rule
+
+# Convenience name for target.
+vector_test: test/CMakeFiles/vector_test.dir/rule
+
+.PHONY : vector_test
+
+# fast build rule for target.
+vector_test/fast:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/vector_test.dir/build.make test/CMakeFiles/vector_test.dir/build
+.PHONY : vector_test/fast
+
+# Convenience name for target.
+test/CMakeFiles/unintialized_test.dir/rule:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/unintialized_test.dir/rule
+.PHONY : test/CMakeFiles/unintialized_test.dir/rule
+
+# Convenience name for target.
+unintialized_test: test/CMakeFiles/unintialized_test.dir/rule
+
+.PHONY : unintialized_test
+
+# fast build rule for target.
+unintialized_test/fast:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/unintialized_test.dir/build.make test/CMakeFiles/unintialized_test.dir/build
+.PHONY : unintialized_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/alloc_test.dir/rule:
@@ -194,14 +224,70 @@ construct_test.cpp.s:
 	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/construct_test.cpp.s
 .PHONY : construct_test.cpp.s
 
+unintialized_test.o: unintialized_test.cpp.o
+
+.PHONY : unintialized_test.o
+
+# target to build an object file
+unintialized_test.cpp.o:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/unintialized_test.dir/build.make test/CMakeFiles/unintialized_test.dir/unintialized_test.cpp.o
+.PHONY : unintialized_test.cpp.o
+
+unintialized_test.i: unintialized_test.cpp.i
+
+.PHONY : unintialized_test.i
+
+# target to preprocess a source file
+unintialized_test.cpp.i:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/unintialized_test.dir/build.make test/CMakeFiles/unintialized_test.dir/unintialized_test.cpp.i
+.PHONY : unintialized_test.cpp.i
+
+unintialized_test.s: unintialized_test.cpp.s
+
+.PHONY : unintialized_test.s
+
+# target to generate assembly for a file
+unintialized_test.cpp.s:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/unintialized_test.dir/build.make test/CMakeFiles/unintialized_test.dir/unintialized_test.cpp.s
+.PHONY : unintialized_test.cpp.s
+
+vector_test.o: vector_test.cpp.o
+
+.PHONY : vector_test.o
+
+# target to build an object file
+vector_test.cpp.o:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/vector_test.dir/build.make test/CMakeFiles/vector_test.dir/vector_test.cpp.o
+.PHONY : vector_test.cpp.o
+
+vector_test.i: vector_test.cpp.i
+
+.PHONY : vector_test.i
+
+# target to preprocess a source file
+vector_test.cpp.i:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/vector_test.dir/build.make test/CMakeFiles/vector_test.dir/vector_test.cpp.i
+.PHONY : vector_test.cpp.i
+
+vector_test.s: vector_test.cpp.s
+
+.PHONY : vector_test.s
+
+# target to generate assembly for a file
+vector_test.cpp.s:
+	cd /home/caffe/CLionProjects/mytinystl/cmake-build-debug && $(MAKE) -f test/CMakeFiles/vector_test.dir/build.make test/CMakeFiles/vector_test.dir/vector_test.cpp.s
+.PHONY : vector_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... vector_test"
+	@echo "... rebuild_cache"
+	@echo "... unintialized_test"
 	@echo "... alloc_test"
 	@echo "... construct_test"
 	@echo "... alloc_test.o"
@@ -210,6 +296,12 @@ help:
 	@echo "... construct_test.o"
 	@echo "... construct_test.i"
 	@echo "... construct_test.s"
+	@echo "... unintialized_test.o"
+	@echo "... unintialized_test.i"
+	@echo "... unintialized_test.s"
+	@echo "... vector_test.o"
+	@echo "... vector_test.i"
+	@echo "... vector_test.s"
 .PHONY : help
 
 
