@@ -32,6 +32,8 @@ int main(){
     cout<<"4:";
     for(mystl::Vector<int>::iterator iter=a.begin();iter!=a.end();++iter) cout<<*iter<<" ";
     cout<<endl;
+    a.clear();
+    cout<<a.size()<<endl;
     cout<<"OK!"<<endl;
     return 0;
 }

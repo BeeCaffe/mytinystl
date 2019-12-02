@@ -124,30 +124,17 @@ mytinystl/fast:
 .PHONY : mytinystl/fast
 
 #=============================================================================
-# Target rules for targets named vector_test
+# Target rules for targets named construct_test
 
 # Build rule for target.
-vector_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vector_test
-.PHONY : vector_test
+construct_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 construct_test
+.PHONY : construct_test
 
 # fast build rule for target.
-vector_test/fast:
-	$(MAKE) -f test/CMakeFiles/vector_test.dir/build.make test/CMakeFiles/vector_test.dir/build
-.PHONY : vector_test/fast
-
-#=============================================================================
-# Target rules for targets named unintialized_test
-
-# Build rule for target.
-unintialized_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 unintialized_test
-.PHONY : unintialized_test
-
-# fast build rule for target.
-unintialized_test/fast:
-	$(MAKE) -f test/CMakeFiles/unintialized_test.dir/build.make test/CMakeFiles/unintialized_test.dir/build
-.PHONY : unintialized_test/fast
+construct_test/fast:
+	$(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/build
+.PHONY : construct_test/fast
 
 #=============================================================================
 # Target rules for targets named alloc_test
@@ -163,17 +150,43 @@ alloc_test/fast:
 .PHONY : alloc_test/fast
 
 #=============================================================================
-# Target rules for targets named construct_test
+# Target rules for targets named list_test
 
 # Build rule for target.
-construct_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 construct_test
-.PHONY : construct_test
+list_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 list_test
+.PHONY : list_test
 
 # fast build rule for target.
-construct_test/fast:
-	$(MAKE) -f test/CMakeFiles/construct_test.dir/build.make test/CMakeFiles/construct_test.dir/build
-.PHONY : construct_test/fast
+list_test/fast:
+	$(MAKE) -f test/CMakeFiles/list_test.dir/build.make test/CMakeFiles/list_test.dir/build
+.PHONY : list_test/fast
+
+#=============================================================================
+# Target rules for targets named unintialized_test
+
+# Build rule for target.
+unintialized_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unintialized_test
+.PHONY : unintialized_test
+
+# fast build rule for target.
+unintialized_test/fast:
+	$(MAKE) -f test/CMakeFiles/unintialized_test.dir/build.make test/CMakeFiles/unintialized_test.dir/build
+.PHONY : unintialized_test/fast
+
+#=============================================================================
+# Target rules for targets named vector_test
+
+# Build rule for target.
+vector_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vector_test
+.PHONY : vector_test
+
+# fast build rule for target.
+vector_test/fast:
+	$(MAKE) -f test/CMakeFiles/vector_test.dir/build.make test/CMakeFiles/vector_test.dir/build
+.PHONY : vector_test/fast
 
 main.o: main.cpp.o
 
@@ -211,10 +224,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mytinystl"
 	@echo "... edit_cache"
-	@echo "... vector_test"
-	@echo "... unintialized_test"
-	@echo "... alloc_test"
 	@echo "... construct_test"
+	@echo "... alloc_test"
+	@echo "... list_test"
+	@echo "... unintialized_test"
+	@echo "... vector_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

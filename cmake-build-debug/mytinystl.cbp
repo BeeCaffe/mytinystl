@@ -83,8 +83,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="vector_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/vector_test" prefix_auto="0" extension_auto="0"/>
+			<Target title="construct_test">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/construct_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -100,14 +100,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="vector_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/vector_test" prefix_auto="0" extension_auto="0"/>
+			<Target title="construct_test/fast">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/construct_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -123,53 +123,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="unintialized_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/unintialized_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="unintialized_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/unintialized_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
@@ -221,8 +175,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="construct_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/construct_test" prefix_auto="0" extension_auto="0"/>
+			<Target title="list_test">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/list_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -238,14 +192,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 list_test"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="construct_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/construct_test" prefix_auto="0" extension_auto="0"/>
+			<Target title="list_test/fast">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/list_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -261,7 +215,99 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 list_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unintialized_test">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/unintialized_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unintialized_test/fast">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/unintialized_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_test">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/vector_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_test/fast">
+				<Option output="/home/caffe/CLionProjects/mytinystl/bin/vector_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
@@ -276,6 +322,9 @@
 		</Unit>
 		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/construct_test.cpp">
 			<Option target="construct_test"/>
+		</Unit>
+		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/list_test.cpp">
+			<Option target="list_test"/>
 		</Unit>
 		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/unintialized_test.cpp">
 			<Option target="unintialized_test"/>

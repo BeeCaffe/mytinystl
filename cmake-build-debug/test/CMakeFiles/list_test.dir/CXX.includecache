@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+cstddef
+-
+cstdlib
+-
+
+/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+
+/home/caffe/CLionProjects/mytinystl/include1.0/List.h
+Construct.h
+/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+lzma.h
+-
+Alloc.h
+/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+
+/home/caffe/CLionProjects/mytinystl/test/list_test.cpp
+../include1.0/List.h
+/home/caffe/CLionProjects/mytinystl/include1.0/List.h
+stdio.h
+-
+vector
+-
+iostream
+-
+

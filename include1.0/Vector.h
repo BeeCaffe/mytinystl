@@ -177,6 +177,7 @@ namespace mystl{
     }
     template <class T,class Alloc>
     void Vector<T,Alloc>::clear() {
+        earse(begin(),end());
     }
     /**
      * @brief destory all objects and release all memory space.
@@ -246,7 +247,7 @@ namespace mystl{
     typename Vector<T, Alloc>::iterator Vector<T,Alloc>::earse(mystl::Vector<T, Alloc>::iterator first,mystl::Vector<T, Alloc>::iterator last) {
 //        for(iterator iter=first;iter!=last;++iter) earse(iter);
         for(iterator iter=first;iter!=last;++iter) *(iter)=*(iter+(last-first));
-        for(iterator iter=finish-(last-first);iter!=finish;--iter) destory(iter);
+        for(iterator iter=finish-(last-first);iter!=finish;++iter) destory(iter);
         finish=finish-(last-first);
         return finish;
     }
@@ -261,25 +262,48 @@ namespace mystl{
     typename Vector<T,Alloc>::reference Vector<T,Alloc>::operator[](unsigned long i) {
         return *(begin()+i);
     }
+    /**
+     * @brief resize the vector to you want to be.if new size is bigger than old size,It will fill the
+     * left elements with constructor of class "T",else it will delete the exceed elements.
+     * @tparam T : type
+     * @tparam Alloc : allocate
+     * @param new_sz : new size you want to get.
+     */
     template <class T,class Alloc>
     void Vector<T,Alloc>::resize(unsigned long new_sz) {
         if(new_sz>size()){
             for(int i=size();i<new_sz;++i) push_back(T());
         }else if(new_sz<size()){
-            earse(begin()+new_sz-1,finish);
+            earse(begin()+new_sz,finish);
         }
     }
-
+    /**
+     * @brief same as upper,but if new size is bigger than old size,it will fill exceed space with 'value'
+     * @tparam T : type
+     * @tparam Alloc : allocator
+     * @param new_sz : new size
+     * @param value : the value
+     */
     template <class T,class Alloc>
     void Vector<T,Alloc>::resize(unsigned long new_sz, const value_type &value) {
         if(new_sz>size()){
             for(int i=size();i<new_sz;++i) push_back(value);
         }else if(new_sz<size()){
-            earse(begin()+new_sz-1,finish);
+            earse(begin()+new_sz,finish);
         }
     }
+    /**
+     *
+     * @tparam T
+     * @tparam Alloc
+     * @param position
+     * @param n
+     * @param value
+     */
+    template <class T,class Alloc>
+    void Vector<T,Alloc>::insert(mystl::Vector<T, Alloc>::iterator position, unsigned long n,
+                                 const value_type &value) {
+
+    }
 }
-
-
-
 #endif //MYTINYSTL_VECTOR_H
