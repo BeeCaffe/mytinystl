@@ -8,334 +8,313 @@
 		<Option virtualFolders="CMake Files\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/cmake-build-debug"/>
+				<Option working_dir="D:/mytinystl/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mytinystl">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/mytinystl" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option output="D:/mytinystl/bin/mytinystl.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 mytinystl"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 mytinystl"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mytinystl/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/mytinystl" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option output="D:/mytinystl/bin/mytinystl.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 mytinystl/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 mytinystl/fast"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/cmake-build-debug"/>
+				<Option working_dir="D:/mytinystl/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="construct_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/construct_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/mytinystl/cmake-build-debug"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="construct_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/construct_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="alloc_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/alloc_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option output="D:/mytinystl/bin/alloc_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 alloc_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 alloc_test"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="alloc_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/alloc_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option output="D:/mytinystl/bin/alloc_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 alloc_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/list_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 list_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/list_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 list_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="unintialized_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/unintialized_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="unintialized_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/unintialized_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 alloc_test/fast"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vector_test">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/vector_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option output="D:/mytinystl/bin/vector_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vector_test/fast">
-				<Option output="/home/caffe/CLionProjects/mytinystl/bin/vector_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/caffe/CLionProjects/mytinystl/bin"/>
+				<Option output="D:/mytinystl/bin/vector_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/caffe/CLionProjects/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 vector_test/fast"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="construct_test">
+				<Option output="D:/mytinystl/bin/construct_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="construct_test/fast">
+				<Option output="D:/mytinystl/bin/construct_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 construct_test/fast"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unintialized_test">
+				<Option output="D:/mytinystl/bin/unintialized_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unintialized_test/fast">
+				<Option output="D:/mytinystl/bin/unintialized_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 unintialized_test/fast"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_test">
+				<Option output="D:/mytinystl/bin/list_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 list_test"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_test/fast">
+				<Option output="D:/mytinystl/bin/list_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/mytinystl/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 list_test/fast"/>
+					<CompileFile command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;D:/mytinystl/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/main.cpp">
+		<Unit filename="D:/mytinystl/include1.0/envs_msg.h">
 			<Option target="mytinystl"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/alloc_test.cpp">
+		<Unit filename="D:/mytinystl/main.cpp">
+			<Option target="mytinystl"/>
+		</Unit>
+		<Unit filename="D:/mytinystl/test/alloc_test.cpp">
 			<Option target="alloc_test"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/construct_test.cpp">
+		<Unit filename="D:/mytinystl/test/construct_test.cpp">
 			<Option target="construct_test"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/list_test.cpp">
+		<Unit filename="D:/mytinystl/test/list_test.cpp">
 			<Option target="list_test"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/unintialized_test.cpp">
+		<Unit filename="D:/mytinystl/test/unintialized_test.cpp">
 			<Option target="unintialized_test"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/vector_test.cpp">
+		<Unit filename="D:/mytinystl/test/vector_test.cpp">
 			<Option target="vector_test"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/CMakeLists.txt">
+		<Unit filename="D:/mytinystl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/caffe/CLionProjects/mytinystl/test/CMakeLists.txt">
+		<Unit filename="D:/mytinystl/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>

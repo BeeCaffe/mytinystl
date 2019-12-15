@@ -5,6 +5,7 @@
 #ifndef MYTINYSTL_UNINITIALIZED_H
 #define MYTINYSTL_UNINITIALIZED_H
 
+#include "envs_msg.h"
 #include <cstdio>
 #include <cstdlib>
 #include "Construct.h"

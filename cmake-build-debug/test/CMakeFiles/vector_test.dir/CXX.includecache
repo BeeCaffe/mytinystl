@@ -6,33 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0/Alloc.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 cstddef
 -
 cstdlib
 -
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0/Construct.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Uninitialized.h
+D:/mytinystl/include1.0/Uninitialized.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 cstdio
 -
 cstdlib
 -
 Construct.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0/Construct.h
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Vector.h
+D:/mytinystl/include1.0/Vector.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 lzma.h
 -
+crtdefs.h
+-
 Alloc.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0/Alloc.h
 Uninitialized.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Uninitialized.h
+D:/mytinystl/include1.0/Uninitialized.h
 
-/home/caffe/CLionProjects/mytinystl/test/vector_test.cpp
+D:/mytinystl/include1.0/envs_msg.h
+
+D:/mytinystl/test/vector_test.cpp
 ../include1.0/Vector.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Vector.h
+D:/mytinystl/include1.0/Vector.h
 stdio.h
 -
 vector

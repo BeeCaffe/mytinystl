@@ -6,25 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0/Alloc.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 cstddef
 -
 cstdlib
 -
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0/Construct.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 
-/home/caffe/CLionProjects/mytinystl/include1.0/List.h
+D:/mytinystl/include1.0/List.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 Construct.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0/Construct.h
 lzma.h
 -
 Alloc.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0/Alloc.h
 
-/home/caffe/CLionProjects/mytinystl/test/list_test.cpp
+D:/mytinystl/include1.0/envs_msg.h
+
+D:/mytinystl/test/list_test.cpp
 ../include1.0/List.h
-/home/caffe/CLionProjects/mytinystl/include1.0/List.h
+D:/mytinystl/include1.0/List.h
 stdio.h
 -
 vector

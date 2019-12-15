@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0/Alloc.h
 cstddef
 -
 cstdlib
 -
 
-/home/caffe/CLionProjects/mytinystl/test/alloc_test.cpp
+D:/mytinystl/test/alloc_test.cpp
 ../include1.0/Alloc.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0/Alloc.h
 stdio.h
 -
 vector

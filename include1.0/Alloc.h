@@ -4,7 +4,7 @@
  **********************************************************************************************************************/
 #ifndef MYTINYSTL_ALLOC_H
 #define MYTINYSTL_ALLOC_H
-
+#include "envs_msg.h"
 #include <cstddef>
 #include <cstdlib>
 

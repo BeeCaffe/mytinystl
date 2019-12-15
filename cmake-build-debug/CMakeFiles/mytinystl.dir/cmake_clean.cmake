@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "../bin/mytinystl"
+  "../bin/libmytinystl.dll.a"
+  "../bin/mytinystl.exe"
+  "../bin/mytinystl.exe.manifest"
   "../bin/mytinystl.pdb"
-  "CMakeFiles/mytinystl.dir/main.cpp.o"
+  "CMakeFiles/mytinystl.dir/main.cpp.obj"
 )
 
 # Per-language clean rules from dependency scanning.

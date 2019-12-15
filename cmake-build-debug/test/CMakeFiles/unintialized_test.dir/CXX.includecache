@@ -6,19 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0/Construct.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 
-/home/caffe/CLionProjects/mytinystl/include1.0/Uninitialized.h
+D:/mytinystl/include1.0/Uninitialized.h
+envs_msg.h
+D:/mytinystl/include1.0/envs_msg.h
 cstdio
 -
 cstdlib
 -
 Construct.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0/Construct.h
 
-/home/caffe/CLionProjects/mytinystl/test/unintialized_test.cpp
+D:/mytinystl/include1.0/envs_msg.h
+
+D:/mytinystl/test/unintialized_test.cpp
 ../include1.0/Uninitialized.h
-/home/caffe/CLionProjects/mytinystl/include1.0/Uninitialized.h
+D:/mytinystl/include1.0/Uninitialized.h
 stdio.h
 -
 vector

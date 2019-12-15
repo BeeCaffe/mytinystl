@@ -5,7 +5,14 @@
 #ifndef MYTINYSTL_VECTOR_H
 #define MYTINYSTL_VECTOR_H
 
+#include "envs_msg.h"
+#ifdef envs_linux
 #include <lzma.h>
+#endif
+#ifdef envs_windows
+#include <crtdefs.h>
+#endif
+
 #include "Alloc.h"
 #include "Uninitialized.h"
 
@@ -154,7 +161,7 @@ namespace mystl{
      * @param value : value
      */
     template <class T,class Alloc>
-    Vector<T,Alloc>::Vector(unsigned long n, const T &value) {
+    Vector<T,Alloc>::Vector(size_t n, const T &value) {
        fill_initialize(n,value);
     }
     template <class T,class Alloc>
@@ -259,7 +266,7 @@ namespace mystl{
      * @return element number of index i.
      */
     template <class T,class Alloc>
-    typename Vector<T,Alloc>::reference Vector<T,Alloc>::operator[](unsigned long i) {
+    typename Vector<T,Alloc>::reference Vector<T,Alloc>::operator[](size_t i) {
         return *(begin()+i);
     }
     /**
@@ -270,7 +277,7 @@ namespace mystl{
      * @param new_sz : new size you want to get.
      */
     template <class T,class Alloc>
-    void Vector<T,Alloc>::resize(unsigned long new_sz) {
+    void Vector<T,Alloc>::resize(size_t new_sz) {
         if(new_sz>size()){
             for(int i=size();i<new_sz;++i) push_back(T());
         }else if(new_sz<size()){
@@ -285,7 +292,7 @@ namespace mystl{
      * @param value : the value
      */
     template <class T,class Alloc>
-    void Vector<T,Alloc>::resize(unsigned long new_sz, const value_type &value) {
+    void Vector<T,Alloc>::resize(size_t new_sz, const value_type &value) {
         if(new_sz>size()){
             for(int i=size();i<new_sz;++i) push_back(value);
         }else if(new_sz<size()){
@@ -301,7 +308,7 @@ namespace mystl{
      * @param value
      */
     template <class T,class Alloc>
-    void Vector<T,Alloc>::insert(mystl::Vector<T, Alloc>::iterator position, unsigned long n,
+    void Vector<T,Alloc>::insert(mystl::Vector<T, Alloc>::iterator position, size_t n,
                                  const value_type &value) {
 
     }

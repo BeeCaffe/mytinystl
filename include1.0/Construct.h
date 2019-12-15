@@ -4,6 +4,8 @@
  **********************************************************************************************************************/
 #ifndef MYTINYSTL_CONSTRUCT_H
 #define MYTINYSTL_CONSTRUCT_H
+#include "envs_msg.h"
+
 namespace mystl{
 //#include <new.h>
     template <class T1,class T2>
