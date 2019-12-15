@@ -42,10 +42,12 @@ namespace mystl{
     public:
         node_ptr_type node;
     public:
-        list_iter();
-        list_iter(node_ptr_type x):node(x){}
-        list_iter(const list_iter &x):node(x.node){}
+        list_iter()= default;
+        list_iter(node_ptr_type x);
+        list_iter(const list_iter &x);
+        list_iter(list_iter &x);
         self& operator=(const self &x);
+        self& operator+(const int step);
         bool operator==(const self& x);
         bool operator!=(const self &x);
         self&  operator++();
@@ -56,9 +58,28 @@ namespace mystl{
         pointer operator->() const;
         };
     template <class T>
-    typename list_iter<T>::self & list_iter<T>::operator=(const list_iter<T>::self & x) {
-        return x;
+    list_iter<T>::list_iter(mystl::list_iter<T>::node_ptr_type x) :node(x){
+
     }
+    template <class T>
+    list_iter<T>::list_iter(const list_iter<T> &x) :node(x.node){}
+    template <class T>
+    list_iter<T>::list_iter(list_iter<T> &x):node(x.node){}
+    template <class T>
+    typename list_iter<T>::self & list_iter<T>::operator=(const list_iter<T>::self & x) {
+        node=x.node;
+        return *this;
+    }
+
+//    template <class T>
+//    typename list_iter<T>::self & list_iter<T>::operator+(const int step) {
+//        self ret=*this;
+//        for(int i=0;i<step;++i){
+//            ret.node=ret.node->next;
+//        }
+//        return ret;
+//    }
+
 
     template <class T>
     bool list_iter<T>::operator==(const mystl::list_iter<T>::self &x) {
@@ -130,10 +151,6 @@ namespace mystl{
 
     public:
         List();
-//        List(const T& val){
-//            empty_initialized();
-//
-//        }
 
         iterator begin();
 
@@ -212,12 +229,12 @@ namespace mystl{
     }
     template <class T,class Alloc>
     typename List<T,Alloc>::iterator List<T,Alloc>::begin() {
-        return iterator(head_node->next);
+        return static_cast<iterator>(head_node->next);
     }
 
     template <class T,class Alloc>
     typename List<T,Alloc>::iterator List<T,Alloc>::end() {
-        return iterator (head_node);
+        return static_cast<iterator>(head_node);
     }
     template <class T,class Alloc>
     bool List<T,Alloc>::empty() {
@@ -269,7 +286,7 @@ namespace mystl{
         node_ptr_type tmp=head_node->prev->prev;
         tmp->next=head_node;
         head_node->prev=tmp;
-        put_node(last_node);//销毁最后一个节点
+        destory_node(last_node);//销毁最后一个节点
     }
 
     template <class T,class Alloc>
@@ -278,8 +295,123 @@ namespace mystl{
         node_ptr_type tmp=first->next;
         head_node->next=tmp;
         tmp->prev=head_node;
-        put_node(first);//销毁第一个节点
+        destory_node(first);//销毁第一个节点
     }
 
+    template <class T,class Alloc>
+    typename List<T,Alloc>::iterator List<T,Alloc>::erase(List<T,Alloc>::iterator pos) {
+        node_ptr_type pos_front=pos.node->prev;
+        node_ptr_type pos_next=pos.node->next;
+        destory_node(pos.node);//删除当前节点
+        pos_front->next=pos_next;//将前后两个节点连接起来
+        pos_next->prev=pos_front;
+        iterator ret(pos_next);
+        return ret;//返回
+    }
+
+    template <class T,class Alloc>
+    void List<T,Alloc>::clear() {
+        for(List<T,Alloc>::iterator iter=begin();iter!=end();++iter)
+            erase(iter);
+        head_node->next=head_node;
+        head_node->prev=head_node;
+    }
+
+    template<class T,class Alloc>
+    void List<T,Alloc>::remove(const T & value) {
+        for(iterator iter=begin();iter!=end();++iter){
+            if(iter.node->data==value) erase(iter);
+        }
+    }
+
+    //注意这个函数移除的是连续且相同的两个元素
+    template <class T,class Alloc>
+    void List<T,Alloc>::unique() {
+        iterator first= begin();
+        iterator last= end();
+        iterator next=first;
+        if(begin()==end()) return;
+        while(++next!=last){
+            if(*first==*next){
+                erase(next);
+            }
+            else
+                first=next;
+            next=first;
+        }
+    }
+
+    //将[first,last)内的所有元素移动到position之前
+    template <class T,class Alloc>
+    void List<T,Alloc>::transfer(List::iterator pos, List::iterator first, List::iterator last) {
+        node_ptr_type tmp=pos.node->prev;
+        last.node->prev->next=pos.node;
+        first.node->prev->next=last.node;
+        tmp->next=first.node;
+        pos.node->prev=last.node->prev;
+        last.node->prev=first.node->prev;
+        first.node->prev=tmp;
+    }
+
+    //将list x放在pos之前
+    template <class T,class Alloc>
+    void List<T,Alloc>::splice(List::iterator pos, List<T, Alloc> & x) {
+        transfer(pos,x.begin(),x.end());
+    }
+
+    //将i放在pos之前
+    template <class T,class Alloc>
+    void List<T,Alloc>::splice(List::iterator pos, List<T, Alloc> & x, List::iterator i) {
+        iterator j=i;
+        ++j;
+        if(pos==i||pos==j) return;
+        transfer(pos,i,j);
+    }
+
+    //将[first,last)内容放在pos之前
+    //pos和[first,last)可以指向同一个list
+    //但pos不能位于[first,last)内部
+    template <class T,class Alloc>
+    void List<T,Alloc>::splice(List::iterator pos, List<T, Alloc> & x, List::iterator first, List::iterator last) {
+        if(first!=last) transfer(pos,first,last);
+    }
+
+    //将两个排好序的list合并在一起
+    //这是《数据结构》第二章的一个练习题
+    template <class T,class Alloc>
+    void List<T,Alloc>::merge(mystl::List<T, Alloc> &x) {
+        iterator first1=this->begin();
+        iterator last1=this->end();
+        iterator first2=this->begin();
+        iterator last2=this->end();
+        while(first1!=last1&&first2!=last2){
+            if(*first1>*first2){
+                iterator next=first2;
+                transfer(first1,first2,++next);
+                first2=next;
+            }else ++first1;
+        }
+        if(first2!=last2) transfer(last1,first2,last2);
+    }
+
+    //将*this中的内容转置,算法过程相当于从第二个开始，对后面的所有元素进行头插
+    template <class T,class Alloc>
+    void List<T,Alloc>::reverse() {
+        iterator first=begin();
+        if(first.node->next==first || first.node->next->next==first) return;
+        ++first;
+        while(first!=end()){
+            iterator old=first;
+            ++first;
+            transfer(begin(),old,first);
+        }
+    }
+
+    //list无法使用STL算法中的sort(),因为其迭代器不是random accessed，需要自己实现
+    //list内置sort()采用快排
+    template <class T,class Alloc>
+    void List<T,Alloc>::sort() {
+
+    }
 }
 #endif //MYTINYSTL_LIST_H

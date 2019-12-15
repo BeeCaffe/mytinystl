@@ -310,7 +310,25 @@ namespace mystl{
     template <class T,class Alloc>
     void Vector<T,Alloc>::insert(mystl::Vector<T, Alloc>::iterator position, size_t n,
                                  const value_type &value) {
-
+        int new_size=size()+n;
+        if(new_size>capacity()){
+            iterator new_start=data_alloc::allocate(2*new_size);
+            iterator new_capacity=new_start+2*new_size;
+            iterator  new_finish=new_start+new_size;
+            iterator old_tmp=begin();
+            iterator new_tmp=new_start;
+            while(old_tmp!=position) *(old_tmp++)=*(new_tmp++);
+            for(int i=0;i<n;++i) *(new_tmp++)=value;
+            while (old_tmp!=end()) *(old_tmp++)=*(new_tmp++);
+            start=new_start;
+            finish=new_finish;
+            end_of_storage=new_capacity;
+        }else{
+            int new_end=size()+n;
+            for(iterator iter=new_end;iter>size();--iter) *(iter)=*(iter-n);
+            for(iterator iter=end();iter!=end()-n;--iter) *iter=value;
+            finish=end()+n;
+        }
     }
 }
 #endif //MYTINYSTL_VECTOR_H

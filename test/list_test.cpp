@@ -27,7 +27,26 @@ int main(){
     list.push_front(999);
     list.pop_back();
     list.pop_front();
-    for(auto node:list) cout<<node<<endl;
+    list.push_front(110);
+    list.erase(list.begin());
+    for(auto node:list) cout<<node<<" ";
+    cout<<endl;
+    list.clear();
+    for (int i = 0; i < 10; ++i) {
+        list.push_back(i);
+    }
+    list.remove(2);
+    list.push_back(2);
+    list.push_back(2);
+    list.push_back(2);
+    list.push_back(3);
+    list.push_back(5);
+    list.unique();
+    for(auto node:list) cout<<node<<" ";
+    cout<<endl;
+    list.transfer(list.begin(),++list.begin(),--list.end());
+    for(auto node:list) cout<<node<<" ";
+    cout<<endl;
     cout<<"OK!"<<endl;
     return 0;
 }
