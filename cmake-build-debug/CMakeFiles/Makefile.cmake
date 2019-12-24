@@ -61,4 +61,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "test/CMakeFiles/construct_test.dir/DependInfo.cmake"
   "test/CMakeFiles/unintialized_test.dir/DependInfo.cmake"
   "test/CMakeFiles/list_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/deque_test.dir/DependInfo.cmake"
   )

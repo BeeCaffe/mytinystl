@@ -34,7 +34,9 @@ T* last；//该迭代器当前所在缓冲区尾
 T** node；//指向管控中心  
 
 ### 成员函数
-buffer_size();//决定缓冲区大小的函数  
+static size_t buffer_size();//决定缓冲区大小的函数  
+
+inline size_t deque_buf_size(size_t n,size_t sz);//  
 
 void set_node(T** new_node);//跳一个缓冲区  
 
@@ -53,8 +55,6 @@ self& operator+=();//重载+=操作符
 self& operator+();//重载+操作符  
 
 self& operator-=();//重载-=操作符  
-
-self operator-();//重载-操作符  
 
 reference operator[]();//实现随机存取  
 

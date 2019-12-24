@@ -51,8 +51,7 @@ details of those function and container.
     
     * cd ../bin && ./xxx_test
     
-* windows
-  
+* windows  
 This project is developed in CLion(Cmake linked),the simplest
 way is to install CLion IDE in windows platform directly.
 After the relevant environment is configured ,clicking run to 
@@ -106,6 +105,5 @@ bug，在后续的版本中应当会进行相应的修改。为了简化实现�
     * cd ../bin && ./xxx_test
     
 * windows  
-
 本项目采用CLion+Cmake进行开发，建议最简单的办法是直接安装CLion
 配置好相关环境之后直接点击运行就可以了，注意g++编译器的版本要求。

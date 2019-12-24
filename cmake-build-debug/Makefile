@@ -187,6 +187,19 @@ list_test/fast:
 	$(MAKE) -f test\CMakeFiles\list_test.dir\build.make test/CMakeFiles/list_test.dir/build
 .PHONY : list_test/fast
 
+#=============================================================================
+# Target rules for targets named deque_test
+
+# Build rule for target.
+deque_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 deque_test
+.PHONY : deque_test
+
+# fast build rule for target.
+deque_test/fast:
+	$(MAKE) -f test\CMakeFiles\deque_test.dir\build.make test/CMakeFiles/deque_test.dir/build
+.PHONY : deque_test/fast
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -228,6 +241,7 @@ help:
 	@echo ... construct_test
 	@echo ... unintialized_test
 	@echo ... list_test
+	@echo ... deque_test
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

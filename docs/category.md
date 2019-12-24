@@ -4,3 +4,4 @@
 ## [几个初始化算法(uninitialized)](uninitialized.md)
 ## [数组(vector)](vector.md)
 ## [链表(list)](list.md)
+## [deque](deque.md)

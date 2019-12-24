@@ -7,4 +7,5 @@ D:/mytinystl/cmake-build-debug/test/CMakeFiles/construct_test.dir
 D:/mytinystl/cmake-build-debug/test/CMakeFiles/unintialized_test.dir
 D:/mytinystl/cmake-build-debug/test/CMakeFiles/list_test.dir
 D:/mytinystl/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+D:/mytinystl/cmake-build-debug/test/CMakeFiles/deque_test.dir
 D:/mytinystl/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir

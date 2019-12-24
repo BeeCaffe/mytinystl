@@ -6,33 +6,33 @@
 
 #IncludeRegexTransform: 
 
-D:/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0.0/Alloc.h
 envs_msg.h
-D:/mytinystl/include1.0/envs_msg.h
+D:/mytinystl/include1.0.0/envs_msg.h
 cstddef
 -
 cstdlib
 -
 
-D:/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0.0/Construct.h
 envs_msg.h
-D:/mytinystl/include1.0/envs_msg.h
+D:/mytinystl/include1.0.0/envs_msg.h
 
-D:/mytinystl/include1.0/List.h
+D:/mytinystl/include1.0.0/List.h
 envs_msg.h
-D:/mytinystl/include1.0/envs_msg.h
+D:/mytinystl/include1.0.0/envs_msg.h
 Construct.h
-D:/mytinystl/include1.0/Construct.h
+D:/mytinystl/include1.0.0/Construct.h
 lzma.h
 -
 Alloc.h
-D:/mytinystl/include1.0/Alloc.h
+D:/mytinystl/include1.0.0/Alloc.h
 
-D:/mytinystl/include1.0/envs_msg.h
+D:/mytinystl/include1.0.0/envs_msg.h
 
 D:/mytinystl/test/list_test.cpp
-../include1.0/List.h
-D:/mytinystl/include1.0/List.h
+../include1.0.0/List.h
+D:/mytinystl/include1.0.0/List.h
 stdio.h
 -
 vector

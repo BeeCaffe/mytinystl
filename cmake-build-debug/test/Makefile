@@ -184,6 +184,21 @@ list_test/fast:
 	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f test\CMakeFiles\list_test.dir\build.make test/CMakeFiles/list_test.dir/build
 .PHONY : list_test/fast
 
+# Convenience name for target.
+test/CMakeFiles/deque_test.dir/rule:
+	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/deque_test.dir/rule
+.PHONY : test/CMakeFiles/deque_test.dir/rule
+
+# Convenience name for target.
+deque_test: test/CMakeFiles/deque_test.dir/rule
+
+.PHONY : deque_test
+
+# fast build rule for target.
+deque_test/fast:
+	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f test\CMakeFiles\deque_test.dir\build.make test/CMakeFiles/deque_test.dir/build
+.PHONY : deque_test/fast
+
 alloc_test.obj: alloc_test.cpp.obj
 
 .PHONY : alloc_test.obj
@@ -237,6 +252,33 @@ construct_test.s: construct_test.cpp.s
 construct_test.cpp.s:
 	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f test\CMakeFiles\construct_test.dir\build.make test/CMakeFiles/construct_test.dir/construct_test.cpp.s
 .PHONY : construct_test.cpp.s
+
+deque_test.obj: deque_test.cpp.obj
+
+.PHONY : deque_test.obj
+
+# target to build an object file
+deque_test.cpp.obj:
+	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f test\CMakeFiles\deque_test.dir\build.make test/CMakeFiles/deque_test.dir/deque_test.cpp.obj
+.PHONY : deque_test.cpp.obj
+
+deque_test.i: deque_test.cpp.i
+
+.PHONY : deque_test.i
+
+# target to preprocess a source file
+deque_test.cpp.i:
+	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f test\CMakeFiles\deque_test.dir\build.make test/CMakeFiles/deque_test.dir/deque_test.cpp.i
+.PHONY : deque_test.cpp.i
+
+deque_test.s: deque_test.cpp.s
+
+.PHONY : deque_test.s
+
+# target to generate assembly for a file
+deque_test.cpp.s:
+	cd /d D:\mytinystl\cmake-build-debug && $(MAKE) -f test\CMakeFiles\deque_test.dir\build.make test/CMakeFiles/deque_test.dir/deque_test.cpp.s
+.PHONY : deque_test.cpp.s
 
 list_test.obj: list_test.cpp.obj
 
@@ -331,6 +373,7 @@ help:
 	@echo ... unintialized_test
 	@echo ... list_test
 	@echo ... edit_cache
+	@echo ... deque_test
 	@echo ... rebuild_cache
 	@echo ... alloc_test.obj
 	@echo ... alloc_test.i
@@ -338,6 +381,9 @@ help:
 	@echo ... construct_test.obj
 	@echo ... construct_test.i
 	@echo ... construct_test.s
+	@echo ... deque_test.obj
+	@echo ... deque_test.i
+	@echo ... deque_test.s
 	@echo ... list_test.obj
 	@echo ... list_test.i
 	@echo ... list_test.s
